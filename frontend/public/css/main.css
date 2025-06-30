@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --accent: #7ba957;
+}
+
+html,
+body,
+textarea {
+  font-family: 'Figtree', sans-serif;
+}
+*::placeholder {
+  color: var(--accent);
+}
+h1,
+h2,
+h3,
+h4,
+em {
+  font-family: Staatliches, sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
